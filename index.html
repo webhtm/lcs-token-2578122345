@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBHTM</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS file -->
+    <script src="password.js" defer></script> <!-- Include password check JS -->
+    <script src="script.js" defer></script>    <!-- Include encryption logic -->
+</head>
+<body>
+    <div class="container">
+        <h1>WEBHTM Group Verification LCS Token</h1>
+        
+        <!-- Password Prompt -->
+        <div id="passwordPrompt">
+            <label for="password">Verify it's you</label>
+            <input type="password" id="password" placeholder="Enter the given password."/>
+            <button onclick="verifyPassword()">Submit</button>
+            <div class="error" id="passwordError">Unmatched password</div>
+        </div>
+
+        <!-- Token Storage -->
+        <div id="tokenSection">
+            <button onclick="encryptAndStoreToken()">Store Encrypted Token</button>
+            <div class="success" id="successMessage">Token stored successfully!</div>
+            <div class="error" id="tokenError">Error storing the token. Try again.</div>
+            <div class="loading" id="loadingMessage">Storing your token, please wait...</div>
+        </div>
+    </div>
+</body>
+</html>

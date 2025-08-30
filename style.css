@@ -1,0 +1,118 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styles */
+.container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    max-width: 90%;
+}
+
+/* Title */
+h1 {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Password Prompt */
+#passwordPrompt {
+    margin-bottom: 25px;
+    
+}
+
+/* Password Input Field */
+#passwordPrompt input {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+#passwordPrompt input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Submit Button (Password Prompt) */
+#passwordPrompt button {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#passwordPrompt button:hover {
+    background-color: #0056b3;
+}
+
+/* Token Section (Hidden by Default) */
+#tokenSection {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Token Button */
+#tokenSection button {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#tokenSection button:hover {
+    background-color: #218838;
+}
+label
+{margin-bottom:10px;}
+/* Error Messages */
+.error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 15px;
+    visibility: hidden; /* Hidden by default */
+}
+
+/* Success Messages */
+.success {
+    color: #28a745;
+    font-size: 14px;
+    margin-top: 15px;
+    visibility: hidden; /* Hidden by default */
+}
+
+.loading {
+    color: #f39c12;
+    font-size: 14px;
+    margin-top: 15px;
+    visibility: hidden; /* Hidden by default */
+}
